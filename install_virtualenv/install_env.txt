@@ -44,3 +44,12 @@ b、激活环境
 c、使用django-admin 命令创建一个项目（首先要配置django的环境到系统变量里）
 django-admin startproject demo
 python manage.py runserver
+
+python demo/manage.py migrate 执行数据库迁移生成数据表
+python demo/manage.py createsuperuser 按照提示输入账户和密码，密码强度符合一定规范
+
+创建应用
+python demo/manage.py startapp app1
+
+命令makemigrations让Django确定该如何修改数据库，使其能够存储与我们定义的新模型相关联的数据
+python manage.py makemigrations app1
