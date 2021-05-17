@@ -1,0 +1,46 @@
+
+1、在CMD命令窗口安装virtualenv环境
+python -m pip install  virtualenv
+
+2、创建一个独立文件夹存放虚拟环境并在CMD命令窗口
+install_virtualenv 
+$ virtualenv ll_env
+
+3、激活虚拟环境
+ll_env\Scripts\activate
+显示如下：表示激活虚拟环境
+D:\XX\WebApplication\WebApplication\install_virtualenv>ll_env\Scripts\activate
+
+(ll_env) D:\XX\WebApplication\WebApplication\install_virtualenv>
+
+使用deactivate关闭虚拟环境
+(ll_env) D:\XX\WebApplication\WebApplication\install_virtualenv>deactivate
+
+4、激活安装虚拟环境后，就可以安装Django
+(ll_env) E:\SelfLearnning\WebApplication\WebApplication\install_virtualenv>pip install Django
+
+
+
+
+
+new step
+
+1、使用virtualenv 安装Django
+
+a\ pip install virtualenv
+b\ pip install django==3.2.3
+
+安装成功
+
+2、创建一个Django项目
+
+a、新建文件夹WebApplication\django3.2
+使用命令创建
+virtualenv E:\SelfLearnning\WebApplication\WebApplication\django3.2
+
+b、激活环境
+使用 E:\SelfLearnning\WebApplication\WebApplication\django3.2\Scripts\activate
+
+c、使用django-admin 命令创建一个项目（首先要配置django的环境到系统变量里）
+django-admin startproject demo
+python manage.py runserver
